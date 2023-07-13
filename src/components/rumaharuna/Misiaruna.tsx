@@ -8,19 +8,21 @@ const missionStatements = [
   'Menciptakan lingkungan belajar seperti suasana rumah.',
   'Memfasilitasi seluruh area perkembangan anak.',
   'Melakukan diferensiasi dalam pembelajaran untuk memenuhi kebutuhan belajar setiap anak.',
-  
 ];
 
 const Misiaruna = () => {
-
   return (
-    <div className="w-full bg-white">
-      <div className="mt-5 sm:pl-10 p-5">
-        <div className="flex">
-          <img src={Plane} alt="Plane" className="h-7" />
-          <p className="pl-2 font-bold">MISI</p>
+    <div className='w-full bg-white font-andika'>
+      <div className='mt-5 sm:pl-10 p-8'>
+        <div className='flex'>
+          <img
+            src={Plane}
+            alt='Plane'
+            className='sm:w-[40.026px] sm:h-[40.026px] w-[30px] h-[30px]'
+          />
+          <p className='pl-2 text-[20px] sm:text-[24px] font-bold'>MISI</p>
         </div>
-        <ul className="list-disc mx-4 sm:w-100 text-sm sm:text-lg text-justify">
+        <ul className='list-disc mx-9 font-w-400 sm:leading-[40px] leading-[30px] sm:w-100 text-[18px] sm:text-[20px] text-justify'>
           {missionStatements.map((statement, index) => (
             <li key={index}>{statement}</li>
           ))}

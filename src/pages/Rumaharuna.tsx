@@ -20,22 +20,28 @@ const Rumaharuna = () => {
   ];
 
   return (
-    <div className='w-full bg-white px-2 sm-px-8 pt-[120px] '>
+    <div className='w-full bg-white  sm-px-8 pt-[100px] '>
+      <div className='bg-[#EF841A] w-full'>
+        <p className='text-[16px] px-10 text-white py-2 sm:py-5'>
+          Beranda &gt; Rumah Aruna
+        </p>
+      </div>
       {data.map((section, index) => (
-        <div key={index} className='p-3'>
-          <h3 className='text-xl text-[#EF841A] font-bold mb-2'>
+        <div key={index} className='p-9'>
+          <h3 className='text-[24px] sm:text-[36px] text-[#EF841A] font-bold mb-2'>
             {section.heading}
           </h3>
-          <div className='flex flex-col-reverse sm:flex-row sm:mb-10 sm:mx-6'>
-            <p className='sm:text-lg sm:mt-20 sm:p-5 pl-2 w-200 text-justify sm:text-left'>
+          <div className='flex flex-col-reverse sm:flex-row mt-5 sm:mt-10'>
+            <p className='sm:text-[20px] text-[18px] mt-5 sm:mt-20 font-w-400 leading-[30px] sm:leading-[40px] sm:w-[634px]'>
               {section.content}
             </p>
-
-            <img
-              className='mt-2 h-[150px] w-[200px] sm:w-[500px] sm:h-[300px]'
-              src={section.image}
-              alt={section.alt}
-            />
+            <div className='pl-10'>
+              <img
+                className=' h-[150px] sm:w-[520.195px] w-[250px] sm:h-[366px]'
+                src={section.image}
+                alt={section.alt}
+              />
+            </div>
           </div>
         </div>
       ))}

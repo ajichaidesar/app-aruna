@@ -36,7 +36,7 @@ const Kurikulum = () => {
         <p className='text-xs'>Beranda &gt; Tentang Kami &gt; Kurikulum</p>
       </div>
       <div className='px-5 pt-3 mb-10 sm:mb-5'>
-        <p className='text-[#EF841A] text-2xl sm:text-xl px-2'>
+        <p className='text-[#EF841A] text-lg sm:text-xl px-2'>
           Kurikulum Rumah Aruna
         </p>
       </div>
@@ -47,8 +47,8 @@ const Kurikulum = () => {
               <img src={Plane} alt='plane' className='h-6 sm:h-8' />
               <h3 className='pl-3 text-sm  font-bold'>{item.title}</h3>
             </div>
-            <div className='text-justify px-7 sm:px-5 mt-2'>
-              <p className='text-xs sm:text-sm'>{item.description}</p>
+            <div className='text-justify px-7 sm:px-5 mt-2 '>
+              <p className='text-xs sm:text-sm '>{item.description}</p>
             </div>
           </div>
         ))}

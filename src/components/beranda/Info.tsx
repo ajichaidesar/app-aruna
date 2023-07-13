@@ -25,7 +25,7 @@ const Info = () => {
       {data.map((item, index) => (
         <div
           key={index}
-          className='bg-white w-[200px] h-[180px] sm:h-[250px] rounded-md p-2 sm:p-4 shadow-lg flex flex-col items-center mr-1 ml-8'
+          className='bg-white w-[200px] h-[180px] sm:h-[250px] rounded-md p-2 sm:p-4 shadow-lg flex flex-col items-center mx-2 sm:ml-8'
         >
           <img
             src={item.Icon_info}

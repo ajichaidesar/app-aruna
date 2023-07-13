@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { image1, image2, image3, image4, image5 } from '../assets/img/galery';
+import { calendar } from '../assets/img/icon';
 
 const workshopsData = [
   {
@@ -37,17 +38,15 @@ const workshopsData = [
 
 const Workshop = () => {
   return (
-    <div className='w-full bg-white py-32 lg:py-50'>
-      <div className='bg-[#EF841A] w-full p-3 mt-[-24px]'>
-        <p className='text-sm sm:text-md'>
-          Beranda &gt; Aruna SDC &gt; Workshop{' '}
-        </p>
+    <div className='w-full bg-white py-32 font-andika lg:py-50'>
+      <div className='bg-[#EF841A] w-full px-10 py-5 mt-[-24px]'>
+        <p className='text-[16px]'>Beranda &gt; Aruna SDC &gt; Workshop </p>
       </div>
-      <div className='text-xl text-center mt-5 font-bold'>
+      <div className='sm:text-[36px] text-[25px] text-center mt-10 font-bold'>
         <h3>Workshop Mendatang</h3>
       </div>
       <div>
-        <div className='mt-3 p-5 sm:pl-20 grid grid-cols-2 sm:grid-cols-2 gap-5'>
+        <div className='mt-3 p-5 sm:pl-12 grid grid-cols-1 sm:grid-cols-2 gap-5'>
           {workshopsData.map((workshop) => (
             <div
               key={workshop.id}
@@ -55,22 +54,28 @@ const Workshop = () => {
             >
               <div className='h-30 rounded-lg'>
                 <img
-                  className='rounded-xl mt-2 h-full sm:mt-0'
+                  className='rounded-xl mt-2 sm:w-[325px] sm:h-[216.454px]'
                   src={workshop.image}
                   alt='Service'
                 />
               </div>
-              <div className='w-2xl mb-10 h-xl px-2 sm:pl-5 h-20 mt-3'>
-                <h3 className='sm:text-xl text-lg text-center sm:text-left'>
+              <div className='w-2xl mb-10  px-2 sm:pl-5 h-20 mt-3'>
+                <h3 className='sm:text-[24px] text-lg text-center sm:text-left'>
                   {workshop.title}
                 </h3>
                 <div className='sm:mt-6 mt-2'>
                   <div className='flex'>
-                    <i className='fa fa-calendar-days' />
-                    <p className='text-xs pl-2'>{workshop.date}</p>
+                    <img
+                      src={calendar}
+                      alt='calender'
+                      className='w-[24px] h-[24px]'
+                    />
+                    <p className='text-[14px] text-[#939393] pl-2'>
+                      {workshop.date}
+                    </p>
                   </div>
                   <div>
-                    <div className='bg-[#3BB3C3] hover:bg- sm:text-center rounded-xl sm:mt-10 mt-5 sm-mb-0 sm:w-40 w-40 p-1 sm:text-lg text-sm text-center'>
+                    <div className='bg-[#3BB3C3] hover:bg-slate-500 font-w-400 sm:text-center text-white rounded-3xl sm:mt-10 mt-5   px-[10px] py-[32px] sm:text-[24px] text-sm text-center'>
                       <Link to={`/register/${workshop.id}`}>
                         Daftar Sekarang
                       </Link>
