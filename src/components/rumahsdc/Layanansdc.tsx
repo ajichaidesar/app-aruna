@@ -9,17 +9,11 @@ import {
 import { Link } from 'react-router-dom';
 
 const Layanansdc = () => {
-  let [open, setOpen] = useState(false);
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
   const services = [
-    {
-      title: 'Sahabat Aruna',
-      icon: iconsahabat,
-    },
-    {
-      title: 'Workshop',
-      icon: iconworkshop,
-    },
     {
       title: 'Konsultasi Pendidikan',
       icon: iconpendidikan,
@@ -34,9 +28,32 @@ const Layanansdc = () => {
 
   return (
     <div>
-      <div onClick={() => setOpen(!open)}></div>
       <p className='text-2xl font-bold text-center'>Layanan Kami</p>
       <div className='max-w-7xl  sm:mx-auto p-5 justify-center items-center sm:m-8 grid grid-cols-2 sm:grid-cols-4 gap-2'>
+        <div className=' bg-white rounded-md p-6 shadow-lg flex flex-col items-center mb-5 mx-5'>
+          <div>
+            <img src={iconsahabat} alt='iconsahabat' className='h-20' />
+          </div>
+          <div className='text-center'>
+            <h3 className='text-xl mt-2'>Sahabat Aruna</h3>
+            <div className='mt-5 text-white'>
+              <i className='fa-solid fa-chevron-up fa-rotate-90 p-2 bg-gray-500 hover:bg-gray-800 rounded-full' />
+            </div>
+          </div>
+        </div>
+        <div className=' bg-white rounded-md p-6 shadow-lg flex flex-col items-center mb-5 mx-5'>
+          <Link to={'Workshop'} onClick={scrollToTop}>
+            <div>
+              <img src={iconworkshop} alt='iconworkshop' className='h-20' />
+            </div>
+            <div className='text-center'>
+              <h3 className='text-xl mt-2'>Workshop</h3>
+              <div className='mt-5 text-white'>
+                <i className='fa-solid fa-chevron-up fa-rotate-90 p-2 bg-gray-500 hover:bg-gray-800 rounded-full' />
+              </div>
+            </div>
+          </Link>
+        </div>
         {services.map((service, index) => (
           <div
             key={index}

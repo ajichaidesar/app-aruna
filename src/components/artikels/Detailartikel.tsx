@@ -18,8 +18,8 @@ const articles = [
 const Detailartikel = () => {
   return (
     <div className='w-full bg-white font-andika py-32 lg:py-50'>
-      <div className='bg-[#EF841A] w-full p-3 mt-[-24px] '>
-        <p className='text-[16px] px-7 py-3'>
+      <div className='bg-[#EF841A] w-full  mt-[-24px] '>
+        <p className='text-[16px] text-white px-7 py-3'>
           Beranda &gt; Artikel &gt; Detail{' '}
         </p>
       </div>
