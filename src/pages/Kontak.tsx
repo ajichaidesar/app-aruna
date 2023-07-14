@@ -1,5 +1,5 @@
 import React from 'react';
-import { aruna1 } from '../assets/img/galery';
+import { Logo } from '../assets/img/galery';
 import Map from '../components/kontakkami/Map';
 import Register2 from '../components/kontakkami/Register2';
 
@@ -7,7 +7,7 @@ const kontak = () => {
   const data = [
     {
       id: 1,
-      image: aruna1,
+      image: Logo,
       address:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
     },
@@ -19,7 +19,7 @@ const kontak = () => {
         <p className='text-lg'>Beranda &gt; Kontak</p>
       </div>
       <div>
-        <p className='pt-8 pl-5 sm:pl-10 text-xl sm:text-3xl text-[#EF841A]'>
+        <p className='pt-8 pl-5 sm:pl-10 text-xl sm:text-[36px] text-[#EF841A]'>
           Hubungi Kami
         </p>
       </div>
@@ -28,9 +28,9 @@ const kontak = () => {
           <img
             src={item.image}
             alt={`Image ${item.id}`}
-            className='p-10 w-100'
+            className='p-10 w-[443.797px] h-[251px]'
           />
-          <div className='px-10 mt-5 sm:mt-40'>
+          <div className='px-10 text-[24px] w-[684px] mt-5 sm:mt-40'>
             <p>Alamat :</p>
             <p>{item.address}</p>
           </div>

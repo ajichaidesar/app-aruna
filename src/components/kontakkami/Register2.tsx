@@ -16,12 +16,14 @@ const Register = () => {
   };
 
   return (
-    <div className='flex flex-col sm:flex-row font-andika '>
-      <div className='mt-500 pl-10'>
-        <p className='sm:text-xl text-lg font-bold '>
+    <div className='sm:flex  font-andika '>
+      <div className='mt-500 pl-10 w-[500px]'>
+        <p className='sm:text-[32px] text-lg font-bold '>
           Anda memiliki pertanyaan ?
         </p>
-        <p>kirim pesan, dan kami akan menjawab pertanyaan anda</p>
+        <p className='sm:text-[20px] text-[#828282] mt-3'>
+          kirim pesan, dan kami akan menjawab pertanyaan anda
+        </p>
       </div>
       <div className='bg-white p-5 sm:p-20 flex justify-center items-center h-7xl '>
         <div className='bg-white rounded-xl p-8  shadow-xl w-[500px] '>

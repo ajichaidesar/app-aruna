@@ -1,4 +1,5 @@
 import React from 'react';
+import { telp, sms } from '../../assets/img/icon';
 
 const Contact = () => {
   const contactData = [
@@ -11,19 +12,23 @@ const Contact = () => {
   ];
 
   return (
-    <div className='mb-3 font-andika'>
-      <h3 className='text-lg sm:text-xl'>Kontak Kami</h3>
-      <ul>
+    <div className='pl-5 mb-3 font-andika'>
+      <h3 className='text-lg sm:text-[24px]'>Kontak Kami</h3>
+      <ul className='sm:mt-5 mt-2'>
         {contactData.map((contact, index) => (
-          <li key={index} className='pb-2'>
+          <li key={index} className='pb-2 flex'>
             {contact.type === 'phone' ? (
-              <i className='fa-solid fa-phone text-md sm:text-2xl mb-3'></i>
+              <img src={telp} alt='telp' className='  sm:text-[32px] mt-1' />
             ) : (
-              <i className='fa-solid fa-envelope text-2xl mb-3'></i>
+              <img
+                src={sms}
+                alt='sms'
+                className='text-[24px] sm:text-[32px] mt-1'
+              />
             )}
             <a
               href={contact.url}
-              className='hover:text-blue-500 pl-2 text-md sm:text-xl'
+              className='hover:text-blue-500 pl-2 text-[20px] sm:text-[24px]'
             >
               {contact.value}
             </a>

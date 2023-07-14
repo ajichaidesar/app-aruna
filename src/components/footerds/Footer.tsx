@@ -1,112 +1,50 @@
 import React from 'react';
 import { logoaruna } from '../../assets/img/icon/index';
 import { logo1 } from '../../assets/img/icon/index';
-import { Link } from 'react-router-dom';
-
+import Beranda from './Beranda';
+import Layanan from './Layanan';
+import Kontak from './Kontak';
+import Sosial from './Sosial';
 const Footer = () => {
   return (
     <footer>
-      <div className='max-w-7xl mx-auto p-5 bg-gray-auto'>
-        <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-5 gap-2'>
-          <div className='mb-3'>
-            <img src={logoaruna} alt='logoaruna' />
-            <h4>Alamat :</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.
-            </p>
-          </div>
-
-          <div className='mb-3 pl-0 sm:pl-10'>
-            <h4>BERANDA</h4>
-            <ul>
-              <li className='pb-2'>
-                <Link to={'Tentang'} className='hover:text-blue-500'>
-                  Tentang Kami
-                </Link>
-              </li>
-              <li className='pb-2'>
-                <Link to={'Kontak'} className='hover:text-blue-500'>
-                  Kontak Kami
-                </Link>
-              </li>
-
-              <li className='pb-2'>
-                <Link to={'Artikel'} className='hover:text-blue-500'>
-                  Artikel
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className='mb-3'>
-            <h4>LAYANAN</h4>
-            <ul>
-              <li className='pb-2'>
-                <Link to={'Rumaharuna'} className='hover:text-blue-500'>
-                  Rumah Aruna
-                </Link>
-              </li>
-              <li className='pb-2'>
-                <Link to={'Arunasdc'} className='hover:text-blue-500'>
-                  Aruna SDC
-                </Link>
-              </li>
-            </ul>
-          </div>
-
+      <div className='max-w-7xl mx-auto font-andika p-5 bg-gray-auto'>
+        <div className='flex sm:flex-row flex-col'>
           <div className='mb-3 '>
-            <h4>KONTAK KAMI</h4>
-            <ul>
-              <li className='pb-2'>
-                <i className='fa-solid fa-phone'></i>
-                <a href='#' className='hover:text-blue-500'>
-                  {' '}
-                  082211223399{' '}
-                </a>
-              </li>
-              <li className='pb-2'>
-                <i className='fa-solid fa-envelope'></i>
-                <a href='#' className='hover:text-blue-500'>
-                  {' '}
-                  rumaharuna@gmail.com{' '}
-                </a>
-              </li>
-            </ul>
+            <img
+              src={logoaruna}
+              alt='logoaruna'
+              className='w-[134.377px] h-[76px]'
+            />
+            <div className='w-[423px] text-16 font-w-400 pl-2'>
+              <h4>Alamat :</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+              </p>
+            </div>
           </div>
+          <div className='flex sm:flex-row flex-col  mt-10'>
+            <div className='sm:px-8'>
+              <Beranda />
+            </div>
 
-          <div className='mb-3 '>
-            <h4>SOSIAL MEDIA</h4>
-            <ul>
-              <li className='pb-2'>
-                <i className='fa-brands fa-square-instagram'></i>
-                <a href='#' className='hover:text-blue-500'>
-                  {' '}
-                  Instagram
-                </a>
-              </li>
-              <li className='pb-2'>
-                <i className='fa-brands fa-facebook'></i>
-                <a href='#' className='hover:text-blue-500'>
-                  {' '}
-                  Facebook
-                </a>
-              </li>
-              <li className='pb-2'>
-                <i className='fa-brands fa-twitter'></i>
-                <a href='#' className='hover:text-blue-500'>
-                  {' '}
-                  Twitter
-                </a>
-              </li>
-            </ul>
-          </div>
+            <div className='sm:px-8 mt-5 sm:mt-0'>
+              <Layanan />
+            </div>
+            <div className='sm:px-8 sm:mr-10 mt-5 sm:mt-0'>
+              <Kontak />
+            </div>
 
-          <div className='mb-3'>
-            <h4>COLABORATION WITH</h4>
-            <img src={logo1} alt='image1' />
+            <div className='mt-5 sm:mt-0'>
+              <Sosial />
+            </div>
           </div>
         </div>
+      </div>
+      <div className='mb-3 sm:ml-10 px-7 sm:px-5'>
+        <h4 className='text-[12px]'>COLABORATION WITH</h4>
+        <img src={logo1} alt='image1' />
       </div>
 
       <div className='flex justify-center items-center px-2 py-4'>

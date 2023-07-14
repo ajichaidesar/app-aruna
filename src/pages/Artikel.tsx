@@ -35,7 +35,9 @@ const Artikel = () => {
     <div className='w-full font-andika bg-white py-32 lg:py-50'>
       <div></div>
       <div className='bg-[#EF841A] w-full p-3 mt-[-24px]'>
-        <p className='text-md sm:text-xl'>Beranda &gt; Artikel</p>
+        <p className='text-md sm:text-[16px] py-4 px-10'>
+          Beranda &gt; Artikel
+        </p>
       </div>
       <p className='sm:text-4xl text-2xl sm:px-20 px-10 sm:py-10 pt-5 text-[#EF841A]'>
         Artikel
