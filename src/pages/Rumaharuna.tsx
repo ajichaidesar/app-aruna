@@ -20,14 +20,14 @@ const Rumaharuna = () => {
   ];
 
   return (
-    <div className='w-full bg-white  sm-px-8 pt-[100px] '>
+    <div className='w-full bg-white  sm-px-20 pt-[100px] '>
       <div className='bg-[#EF841A] w-full'>
-        <p className='text-[16px] px-10 text-white py-2 sm:py-5'>
+        <p className='text-[16px] sm:px-20 px-7 text-white py-2 sm:py-5'>
           Beranda &gt; Rumah Aruna
         </p>
       </div>
       {data.map((section, index) => (
-        <div key={index} className='p-9'>
+        <div key={index} className='p-7 sm:p-20'>
           <h3 className='text-[24px] sm:text-[36px] text-[#EF841A] font-bold mb-2'>
             {section.heading}
           </h3>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { logoaruna } from '../../assets/img/icon/index';
 import { aruna2 } from '../../assets/img/icon/index';
+import { bglayanan } from '../../assets/img/galery';
 
 const servicesData = [
   {
@@ -19,28 +20,33 @@ const servicesData = [
 
 const Layanan = () => {
   return (
-    <div className='max-w-full mx-auto bg-orange-500 w-screen px-3 pt-5 pb-10 sm:pb-40 flex justify-center items-center overflow-hidden rounded-b-none relative flex-col'>
-      <div className='w-[1400px] h-[3100px] rotate-90 bg-white mt-[1700px] sm:mt-[1750px] rounded-full rounded-tr-none rounded-br-none absolute' />
-      <div className='flex'>
-        <h3 className='text-white text-2xl md:text-3xl pt-1'>Layanan Kami</h3>
+    <div className='max-w-full mx-auto w-screen  pt-5 pb-10 sm:pb-40 flex justify-center items-center overflow-hidden rounded-b-none relative flex-col'>
+      <div>
+        <img src={bglayanan} alt='bglayanan' className='h-[300px] sm:h-full ' />
       </div>
-      <div className='flex-row flex mt-4 sm:mt-8'>
-        <div className='w-[2500] sm:w-[3100px] h-[1000px] sm:h-[1400px]  bg-white mt-[1700px] rounded-full rounded-tr-none rounded-br-none absolute' />
+      <div className='flex absolute mt-[-240px] sm:mt-[-400px] '>
+        <h3 className='text-white text-2xl sm:text-[48px] '>Layanan Kami</h3>
+      </div>
+      <div className='flex-row flex  absolute'>
         {servicesData.map((service) => (
           <div
-            className='bg-white py-2 rounded-md sm:p-4 w-[170] sm:w-[200px] first:shadow-lg flex flex-col items-center mx-4 sm:mx-8'
+            className='bg-white rounded-xl   first:shadow-lg  items-center flex flex-col sm:pt-[32px] pt-[12px] sm:px-[50px] px-[20px] sm:pb-[50px] pb-[20px] sm:mx-8 mx-4'
             key={service.id}
           >
             <div>
               <img
                 src={service.logo}
                 alt='service logo'
-                className='h-10 sm:h-18'
+                className='sm:w-[176.812px] w-[100px] h-[50px] sm:h-[100px] '
               />
             </div>
             <div className='text-center '>
-              <h3 className='text-md sm:text-xl mt-2'>{service.title}</h3>
-              <p className='text-sm mt-2'>{service.description}</p>
+              <h3 className='text-[18px] sm:text-[24px] mt-2'>
+                {service.title}
+              </h3>
+              <p className='sm:text-[16px] text-[12px]  mt-2 w-[120px] sm:w-[200px]'>
+                {service.description}
+              </p>
             </div>
           </div>
         ))}

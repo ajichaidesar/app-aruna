@@ -28,26 +28,36 @@ const Layanansdc = () => {
 
   return (
     <div>
-      <p className='text-2xl font-bold text-center'>Layanan Kami</p>
-      <div className='max-w-7xl  sm:mx-auto p-5 justify-center items-center sm:m-8 grid grid-cols-2 sm:grid-cols-4 gap-2'>
+      <p className='sm:text-[48px] font-bold mb-10 text-[30px] text-center'>
+        Layanan Kami
+      </p>
+      <div className='max-w-7xl px-[30px] sm:mx-auto p-5 justify-center items-center sm:m-8 grid grid-cols-2 sm:grid-cols-4 gap-2'>
         <div className=' bg-white rounded-md p-6 shadow-lg flex flex-col items-center mb-5 mx-5'>
           <div>
-            <img src={iconsahabat} alt='iconsahabat' className='h-20' />
+            <img
+              src={iconsahabat}
+              alt='iconsahabat'
+              className='h-[80px] w-[80px]'
+            />
           </div>
           <div className='text-center'>
-            <h3 className='text-xl mt-2'>Sahabat Aruna</h3>
+            <h3 className='text-[20px] mt-2'>Sahabat Aruna</h3>
             <div className='mt-5 text-white'>
-              <i className='fa-solid fa-chevron-up fa-rotate-90 p-2 bg-gray-500 hover:bg-gray-800 rounded-full' />
+              <i className='fa-solid fa-chevron-up fa-rotate-90 p-2 bg-gray-500 hover:bg-gray-800 w-[32px] h-[32px] rounded-full' />
             </div>
           </div>
         </div>
         <div className=' bg-white rounded-md p-6 shadow-lg flex flex-col items-center mb-5 mx-5'>
           <Link to={'Workshop'} onClick={scrollToTop}>
             <div>
-              <img src={iconworkshop} alt='iconworkshop' className='h-20' />
+              <img
+                src={iconworkshop}
+                alt='iconworkshop'
+                className='h-[80px] w-[80px]'
+              />
             </div>
             <div className='text-center'>
-              <h3 className='text-xl mt-2'>Workshop</h3>
+              <h3 className='text-[20px] mt-2'>Workshop</h3>
               <div className='mt-5 text-white'>
                 <i className='fa-solid fa-chevron-up fa-rotate-90 p-2 bg-gray-500 hover:bg-gray-800 rounded-full' />
               </div>
@@ -60,10 +70,14 @@ const Layanansdc = () => {
             className=' bg-white rounded-md p-6 shadow-lg flex flex-col items-center mb-5 mx-5'
           >
             <div>
-              <img src={service.icon} alt={service.title} className='h-20' />
+              <img
+                src={service.icon}
+                alt={service.title}
+                className='h-[80px] w-[80px]'
+              />
             </div>
             <div className='text-center'>
-              <h3 className='text-xl mt-2'>{service.title}</h3>
+              <h3 className='text-[20px] mt-2'>{service.title}</h3>
               <div className='mt-5 text-white'>
                 {service.whatsapp ? (
                   <a

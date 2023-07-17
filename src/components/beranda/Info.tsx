@@ -4,38 +4,42 @@ import { icon1, icon2, icon3 } from '../../assets/img/icon/index';
 const data = [
   {
     Icon_info: icon1,
-    Judul_info: 'Lorem Ipsum 1',
+    Judul_info: 'Lorem Ipsum ',
     Descripsi_info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
     Icon_info: icon1,
-    Judul_info: 'Lorem Ipsum 2',
+    Judul_info: 'Lorem Ipsum ',
     Descripsi_info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
     Icon_info: icon1,
-    Judul_info: 'Lorem Ipsum 3',
+    Judul_info: 'Lorem Ipsum ',
     Descripsi_info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
 ];
 
 const Info = () => {
   return (
-    <div className='max-w-7xl font-andika mx-auto flex justify-center items-center m-8'>
+    <div className='max-w-7xl font-andika mx-auto flex justify-center items-center sm:m-8'>
       {data.map((item, index) => (
         <div
           key={index}
-          className='bg-white w-[200px] h-[180px] sm:h-[250px] rounded-md p-2 sm:p-4 shadow-lg flex flex-col items-center mx-2 sm:ml-8'
+          className='bg-white  rounded-md py-[40px] sm:py-[42px] px-5 sm:px-[35px] mx-2 sm:mx-9 shadow-lg flex flex-col items-center'
         >
           <img
             src={item.Icon_info}
             alt={`icon${index + 1}`}
-            className='h-[60px] sm:h-[100px]'
+            className='sm:w-[76px] sm:h-[76px] w-[35px] h-[35px]'
           />
 
-          <div className='text-center'>
-            <h3 className='text-[15px] sm:text-xl mt-2'>{item.Judul_info}</h3>
-            <p className='text-xs sm:text-sm mt-2 '>{item.Descripsi_info}</p>
+          <div className='text-center sm:w-[210px]'>
+            <h3 className='text-[15px] sm:text-[20px] mt-2'>
+              {item.Judul_info}
+            </h3>
+            <p className='text-xs sm:text-[12px] hidden sm:block mt-2 '>
+              {item.Descripsi_info}
+            </p>
           </div>
         </div>
       ))}

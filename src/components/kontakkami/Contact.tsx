@@ -12,7 +12,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className='pl-5 mb-3 font-andika'>
+    <div className='sm:pl-5 mb-3 font-andika'>
       <h3 className='text-lg sm:text-[24px]'>Kontak Kami</h3>
       <ul className='sm:mt-5 mt-2'>
         {contactData.map((contact, index) => (

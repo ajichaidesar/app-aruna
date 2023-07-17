@@ -11,10 +11,10 @@ const Kegiatanaruna = () => {
     <div>
       <div>
         <div className='mt-40'>
-          <p className='sm:text-[48px] font-bold font-andika text-[30px] text-center'>
+          <p className='sm:text-[48px] font-bold font-andika text-[30px] mb-10 text-center'>
             Kegiatan
           </p>
-          <div className='mt-3 p-8 sm:p-12 grid grid-cols-1 sm:grid-cols-3 gap-4'>
+          <div className='mt-5 px-8  sm:px-20 grid grid-cols-1 sm:grid-cols-3 gap-4'>
             <div className='sm:h-15  rounded-lg'>
               <img src={image1} alt='image1' className='sm:h-full w-full' />
             </div>

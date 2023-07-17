@@ -12,7 +12,7 @@ const Filosofiaruna = () => {
   return (
     <div className='w-full bg-white'>
       {data.map((item, index) => (
-        <div className='mt-5 sm:pl-10 font-andika p-8' key={index}>
+        <div className='mt-5 sm:pl-20 pl-10 font-andika p-8' key={index}>
           <div className='flex'>
             <img
               src={Plane}

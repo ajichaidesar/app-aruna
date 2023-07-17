@@ -39,22 +39,22 @@ const workshopsData = [
 const Workshop = () => {
   return (
     <div className='w-full bg-white py-32 font-andika lg:py-50'>
-      <div className='bg-[#EF841A] w-full px-10 py-5 mt-[-24px]'>
+      <div className='bg-[#EF841A] text-white w-full px-10 sm:px-20 py-5 mt-[-24px]'>
         <p className='text-[16px]'>Beranda &gt; Aruna SDC &gt; Workshop </p>
       </div>
       <div className='sm:text-[36px] text-[25px] text-center mt-10 font-bold'>
         <h3>Workshop Mendatang</h3>
       </div>
       <div>
-        <div className='mt-3 p-5 sm:pl-12 grid grid-cols-1 sm:grid-cols-2 gap-5'>
+        <div className='my-5 px-10 sm:px-20 grid grid-cols-1 sm:grid-cols-2 gap-5'>
           {workshopsData.map((workshop) => (
             <div
               key={workshop.id}
-              className='bg-white shadow-md flex flex-col sm:flex-row sm:w-7xl p-3 rounded-lg'
+              className='bg-white hover:bg-slate-200 mb-10 shadow-md flex flex-col sm:flex-row sm:w-7xl p-5 px-5 rounded-lg'
             >
-              <div className='h-30 rounded-lg'>
+              <div className=' '>
                 <img
-                  className='rounded-xl mt-2 sm:w-[325px] sm:h-[216.454px]'
+                  className=' mt-2 sm:w-[325px] sm:h-[216.454px]'
                   src={workshop.image}
                   alt='Service'
                 />
@@ -75,7 +75,7 @@ const Workshop = () => {
                     </p>
                   </div>
                   <div>
-                    <div className='bg-[#3BB3C3] hover:bg-slate-500 font-w-400 sm:text-center text-white rounded-3xl sm:mt-10 mt-5   px-[10px] py-[32px] sm:text-[24px] text-sm text-center'>
+                    <div className='bg-[#3BB3C3] hover:bg-slate-500 font-w-400  text-white rounded-3xl sm:mt-10 mt-2   px-[5px] py-[10px] sm:py-[10px] sm:text-[24px] text-[24px] text-center'>
                       <Link to={`/register/${workshop.id}`}>
                         Daftar Sekarang
                       </Link>

@@ -22,12 +22,14 @@ const Artikellainnya = () => {
 
   return (
     <div className='mx-0 sm:mx-10'>
-      <h3 className='sm:text-2xl text-[36px] font-bold'>Artikel Lainnya</h3>
+      <h3 className=' sm:text-[36px] text-[28px] mt-5 sm-mt-0 font-bold'>
+        Artikel Lainnya
+      </h3>
 
       {articles.map((article) => (
         <React.Fragment key={article.id}>
           <Link to={`/articles/${article.id}`}>
-            <p className='xl:text-[24px] text-sm my-2 sm:my-10 leading-[40px] hover:bg-slate-500 rounded-lg hover:text-white '>
+            <p className='sm:text-[24px] text-[18px] my-2 sm:my-5 sm:leading-[40px] hover:bg-slate-400 sm:rounded-lg hover:text-white '>
               {article.title}
             </p>
           </Link>

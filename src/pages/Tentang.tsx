@@ -16,16 +16,16 @@ const Tentang = () => {
     <div className='w-full font-andika bg-white py-32 lg:py-50'>
       <div>
         <div className='bg-[#EF841A] w-full p-3 mt-[-24px]'>
-          <p className=' text-white px-3 sm:px-10 text-[16px]'>
+          <p className=' text-white pl-4 sm:pl-20 text-[16px]'>
             Beranda &gt; Tentang Kami
           </p>
         </div>
         <div className='sm:px-10 sm:py-10'>
-          <p className='text-[#EF841A] text-[36px] px-5 sm:px-2'>
+          <p className='text-[#EF841A] text-[30px] sm:text-[36px] px-5 sm:px-2'>
             Tentang Kami
           </p>
           {data.map((item, index) => (
-            <div className='sm:flex sm:mt-10  mt-5 px-7 sm:p-2' key={index}>
+            <div className='sm:flex sm:mt-10  mt-5 px-10 sm:p-20' key={index}>
               <img
                 src={item.image}
                 alt={item.image}

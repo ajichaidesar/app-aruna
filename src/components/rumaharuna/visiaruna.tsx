@@ -8,7 +8,7 @@ const vissionStatements = [
 const Visisdc = () => {
   return (
     <div className='w-full bg-white font-andika'>
-      <div className='mt-5 font-andika sm:pl-10 p-8'>
+      <div className='mt-5 font-andika sm:pl-20 p-10'>
         <div className='flex'>
           <img
             src={Plane}

@@ -8,7 +8,7 @@ import Sosial from './Sosial';
 const Footer = () => {
   return (
     <footer>
-      <div className='max-w-7xl mx-auto font-andika p-5 bg-gray-auto'>
+      <div className='w-full mt-10 mx-auto font-andika p-10 sm:px-20 bg-slate-100'>
         <div className='flex sm:flex-row flex-col'>
           <div className='mb-3 '>
             <img
@@ -16,7 +16,7 @@ const Footer = () => {
               alt='logoaruna'
               className='w-[134.377px] h-[76px]'
             />
-            <div className='w-[423px] text-16 font-w-400 pl-2'>
+            <div className='w-[423px] text-16 font-w-400 '>
               <h4>Alamat :</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -42,8 +42,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='mb-3 sm:ml-10 px-7 sm:px-5'>
-        <h4 className='text-[12px]'>COLABORATION WITH</h4>
+      <div className='mb-3 mt-5 sm:ml-10 px-10 '>
+        <h4 className='text-[12px] '>COLABORATION WITH</h4>
         <img src={logo1} alt='image1' />
       </div>
 

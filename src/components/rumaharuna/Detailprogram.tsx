@@ -21,29 +21,29 @@ const Detailprogram = () => {
       {programs.map((program, index) => (
         <div
           key={index}
-          className='my-[100px] font-andika text-justify p-5 sm:p-10'
+          className='my-[150px] font-andika text-justify px-10 sm:px-20'
         >
-          <div className='pb-5'>
-            <p className='text-[#EF841A] text-lg sm:text-xl'>{program.title}</p>
+          <div className='pb-5 mt-10'>
+            <p className='text-[#EF841A] text-[24px]'>{program.title}</p>
           </div>
           <div className='sm:flex'>
             <div>
               <img
                 src={program.image}
                 alt={`image${index}`}
-                className='w-[300px] sm:w-[2000px]'
+                className='sm:w-[646px] h-[200px]  sm:h-[388px]'
               />
             </div>
             <div>
-              <p className='text-sm sm:text-md mt-3  sm:px-10 sm:mr-10 font-andika'>
+              <p className='text-[18px] leading-[30px] sm:text-[20px] mt-3 sm:w-[700px] sm:px-10  font-andika'>
                 {program.description}
               </p>
             </div>
           </div>
-          <div className='py-5 text-sm sm:text-md sm:mr-10'>
+          <div className='py-5 text-[18px] sm:text-[20px] sm:mr-10'>
             <p>{program.additionalDescription}</p>
           </div>
-          <div className='flex text-xs sm:text-lg mt-5'>
+          <div className='flex text-[18px] sm:text-[20px] mt-5'>
             <div className='bg-[#3BB3C3] hover:bg-slate-500 px-5 items-center mr-2 sm:mr-10 rounded-3xl'>
               <a
                 href={program.whatsappUrl}
