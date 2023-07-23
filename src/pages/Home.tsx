@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../components/beranda/Hero';
 import Info from '../components/beranda/Info';
 import Layanan from '../components/beranda/Layanan';
-import Galery from '../components/beranda/Galery';
+import Kegiatanaruna from '../components/rumaharuna/Kegiatanaruna';
 import Paq from '../components/Paq';
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <Hero />
       <Info />
       <Layanan />
-      <Galery />,
+      <Kegiatanaruna />,
       <Paq />
     </div>
   );

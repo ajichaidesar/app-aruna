@@ -25,14 +25,19 @@ const openWhatsAppChat = (phoneNumber: string) => {
   window.open(url, '_blank');
 };
 
+const handleNavClick = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 const programaruna = () => {
   const renderPrograms = () => {
     return programData.map((program, index) => (
       <>
-        <Link to={`Detailprogram`}>
+        <Link to={'program'}>
           <div
             className='sm:px-20  bg-white hover:bg-slate-200 shadow-xl rounded-2xl ml-10 sm:ml-20 sm:mr-20 mr-10 p-7 mt-5 sm:flex font-andika'
             key={index}
+            onClick={handleNavClick}
           >
             <div className='sm:w-[323px] sm:h-[194px]'>
               <img

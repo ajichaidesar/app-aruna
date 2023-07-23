@@ -33,7 +33,10 @@ function Paq() {
   ]);
 
   return (
-    <div className='mb-5 max-w-7xl  mx-auto p-10 flex justify-center items-center'>
+    <div className='mb-5 max-w-7xl font-andika  mx-auto p-10  justify-center items-center'>
+      <div className='my-5 text-center'>
+        <p className='sm:text-[36px] text-[28px] '>Frequently Asked Question</p>
+      </div>
       <div className='list'>
         {list.map((item, key) => (
           <Accordion

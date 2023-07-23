@@ -10,7 +10,7 @@ const Kegiatanaruna = () => {
   return (
     <div>
       <div>
-        <div className='mt-40'>
+        <div className='sm:mt-20 mt-10'>
           <p className='sm:text-[48px] font-bold font-andika text-[30px] mb-10 text-center'>
             Kegiatan
           </p>

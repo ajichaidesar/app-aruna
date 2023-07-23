@@ -76,9 +76,7 @@ const Workshop = () => {
                   </div>
                   <div>
                     <div className='bg-[#3BB3C3] hover:bg-slate-500 font-w-400  text-white rounded-3xl sm:mt-10 mt-2   px-[5px] py-[10px] sm:py-[10px] sm:text-[24px] text-[24px] text-center'>
-                      <Link to={`/register/${workshop.id}`}>
-                        Daftar Sekarang
-                      </Link>
+                      <Link to={'register'}>Daftar Sekarang</Link>
                     </div>
                   </div>
                 </div>

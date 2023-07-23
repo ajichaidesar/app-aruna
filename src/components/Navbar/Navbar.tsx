@@ -6,13 +6,21 @@ import Button from '../Button';
 const Nav = () => {
   const [open, setOpen] = useState(false);
 
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <div className='shadow-md w-full top-0 left-0 fixed z-10'>
+    <div className='shadow-md w-full text-[16px] text-[#3BB3C3]  top-0 left-0 fixed z-10'>
       <div className='md:flex items-center justify-between bg-white py-4 sm:px-20 px-6 '>
         <div className='flex items-center'>
           <div>
             <Link to={'/'}>
-              <img src={logoaruna} alt='logoaruna' />
+              <img
+                src={logoaruna}
+                alt='logoaruna'
+                className='w-[123.77px]  h-[70px]'
+              />
             </Link>
           </div>
           <div
@@ -32,16 +40,25 @@ const Nav = () => {
               open ? 'top-20 ' : 'top-[-490px]'
             }`}
           >
-            <li className='md:ml-8 text-xl md:my-0 my-7'>
+            <li
+              className='sm:ml-8 rounded-lg p-2 hover:bg-[#EF841A] text-[20px] md:my-0 my-7 hover:text-white'
+              onClick={handleNavClick}
+            >
               <Link to={`tentang`}>Tentang Kami</Link>
             </li>
-            <li className='md:ml-8 text-xl md:my-0 my-7'>
+            <li className='md:ml-8 text-[20px] md:my-0 my-7 rounded-lg p-2 hover:bg-[#EF841A] hover:radius-xl hover:text-white'>
               <Button />
             </li>
-            <li className='md:ml-8 text-xl md:my-0 my-7'>
+            <li
+              className='md:ml-8 text-[20px] md:my-0 my-7 rounded-lg p-2 hover:bg-[#EF841A] hover:text-white'
+              onClick={handleNavClick}
+            >
               <Link to={`kontak`}>Kontak Kami</Link>
             </li>
-            <li className='md:ml-8 text-xl md:my-0 my-7'>
+            <li
+              className='md:ml-8 text-[20px] md:my-0 my-7 rounded-lg p-2 hover:bg-[#EF841A] hover:text-white'
+              onClick={handleNavClick}
+            >
               <Link to={`artikel`}>Artikel</Link>
             </li>
           </ul>

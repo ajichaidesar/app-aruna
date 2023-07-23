@@ -12,7 +12,7 @@ const Layanan = () => {
       <ul className='mt-3'>
         <li className='pb-2'>
           <Link
-            to={'Rumaharuna'}
+            to={`Rumah-Aruna`}
             className='hover:text-blue-500'
             onClick={handleLinkClick}
           >
@@ -21,7 +21,7 @@ const Layanan = () => {
         </li>
         <li className='pb-2'>
           <Link
-            to={'Arunasdc'}
+            to={`aruna-SDc`}
             className='hover:text-blue-500'
             onClick={handleLinkClick}
           >

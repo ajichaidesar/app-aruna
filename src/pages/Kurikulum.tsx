@@ -29,30 +29,39 @@ const Kurikulum = () => {
         'Kecerdasan Majemuk yang dikemukakan oleh Howard Gardner adalah teori yang mengatakan bahwa semua orang memiliki kecerdasan yang berbeda-beda.',
     },
   ];
-
   return (
     <div className='w-full bg-white font-andika py-32 lg:py-50'>
-      <div className='bg-[#EF841A] w-full p-3 mt-[-24px]'>
-        <p className='text-xs'>Beranda &gt; Tentang Kami &gt; Kurikulum</p>
+      <div className='bg-[#EF841A] w-full p-3 px-[25px] sm:px-20 mt-[-24px] '>
+        <p className='text-[16px] text-white'>Beranda &gt; Aruna SDC</p>
       </div>
-      <div className='px-5 pt-3 mb-10 sm:mb-5'>
-        <p className='text-[#EF841A] text-lg sm:text-xl px-2'>
+      <div className='sm:pl-[70px] pl-5 sm:mt-5 mt-3  mb-10 sm:mb-5'>
+        <p className='text-[#EF841A] text-[25px] sm:text-[36px] px-2'>
           Kurikulum Rumah Aruna
         </p>
       </div>
-      <div className='px-2 sm:px-10'>
+      <div className='sm:px-[60px] mt-10 sm:w-[1347px]  '>
         {curriculumData.map((item) => (
           <div className='mb-7' key={item.id}>
             <div className='flex px-5'>
-              <img src={Plane} alt='plane' className='h-6 sm:h-8' />
-              <h3 className='pl-3 text-sm  font-bold'>{item.title}</h3>
+              <img
+                src={Plane}
+                alt='plane'
+                className='sm:w-[40.026px] sm:h-[40.026px] w-[30px] h-[30px]'
+              />
+              <h3 className='sm:pl-3 pl-2 sm:text-[24px] text-[18px] font-bold'>
+                {item.title}
+              </h3>
             </div>
-            <div className='text-justify px-7 sm:px-5 mt-2 '>
-              <p className='text-xs sm:text-sm '>{item.description}</p>
+            <div className='text-justify px-7 sm:px-5 mt-2'>
+              <p className='text-[16px] sm:text-[20px] sm:leading-[40px] leading-[20px]'>
+                {item.description}
+              </p>
             </div>
+            {/* Insert Tabelkurikulum component after the first item */}
+            {item.id === 2 && <Tabelkurikulum />}
+            {item.id === 3 && <Tabelkurikulum />}
           </div>
         ))}
-        <Tabelkurikulum />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Artikellainnya = () => {
-  const articles = [
+  const artikel = [
     {
       id: 1,
       title:
@@ -12,6 +12,7 @@ const Artikellainnya = () => {
       id: 2,
       title:
         '3 Metode Pembelajaran PAUD dan Manfaatnya untuk Perkembangan Anak',
+        
     },
     {
       id: 3,
@@ -26,11 +27,11 @@ const Artikellainnya = () => {
         Artikel Lainnya
       </h3>
 
-      {articles.map((article) => (
-        <React.Fragment key={article.id}>
-          <Link to={`/articles/${article.id}`}>
+      {artikel.map((artikel) => (
+        <React.Fragment key={artikel.id}>
+          <Link to={`Detail-artikel${artikel.id}`}>
             <p className='sm:text-[24px] text-[18px] my-2 sm:my-5 sm:leading-[40px] hover:bg-slate-400 sm:rounded-lg hover:text-white '>
-              {article.title}
+              {artikel.title}
             </p>
           </Link>
           <hr />

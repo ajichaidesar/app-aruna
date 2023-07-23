@@ -35,9 +35,9 @@ const Arunatentang = () => {
           </div>
           <div className=' px-10  '>
             <img
-              className='h-[300px] sm:h-[250px] sm:w-[530.435px] w-[350px] '
+              className='h-[300px] sm:h-[250px] object-contain sm:w-[530.435px] w-[350px] '
               src={item.image}
-              alt={item.title}
+              alt={item.image}
             />
           </div>
         </div>

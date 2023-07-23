@@ -20,7 +20,7 @@ const servicesData = [
 
 const Layanan = () => {
   return (
-    <div className='max-w-full mx-auto w-screen  pt-5 pb-10 sm:pb-40 flex justify-center items-center overflow-hidden rounded-b-none relative flex-col'>
+    <div className='max-w-full mx-auto w-screen  pt-5  flex justify-center items-center overflow-hidden rounded-b-none relative flex-col'>
       <div>
         <img src={bglayanan} alt='bglayanan' className='h-[300px] sm:h-full ' />
       </div>

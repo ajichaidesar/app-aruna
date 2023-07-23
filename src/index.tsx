@@ -37,27 +37,27 @@ const router = createBrowserRouter([
         element: <Artikel />,
       },
       {
-        path: 'artikel/Detailartikel',
+        path: 'artikel/detail-artikel',
         element: <Detailartikel />,
       },
       {
-        path: 'Rumah-Aruna',
+        path: 'rumah-aruna',
         element: <Rumaharuna />,
       },
       {
-        path: 'Rumah-Aruna/Program',
+        path: 'rumah-aruna/program',
         element: <Detailprogram />,
       },
       {
-        path: 'Rumah-Aruna/Kurikulum',
+        path: 'rumah-aruna/kurikulum',
         element: <Kurikulum />,
       },
       {
-        path: 'Aruna-SDC',
+        path: 'aruna-SDC',
         element: <Arunasdc />,
       },
       {
-        path: 'Aruna-SDC/Workshop',
+        path: 'aruna-SDC/workshop',
         element: <Workshop />,
       },
       {

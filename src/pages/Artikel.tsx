@@ -31,9 +31,12 @@ const articles = [
 ];
 
 const Artikel = () => {
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
-    <div className='w-full font-andika bg-white py-32 lg:py-50'>
-      <div className='bg-[#EF841A] w-full p-3 mt-[-24px]'>
+    <div className='max-w-full font-andika bg-white py-32 lg:py-50'>
+      <div className='bg-[#EF841A] max-w-full p-3 mt-[-24px]'>
         <p className='text-md sm:text-[16px] text-white pl-4 sm:pl-[70px]'>
           Beranda &gt; Artikel
         </p>
@@ -42,7 +45,11 @@ const Artikel = () => {
         Artikel
       </p>
       {articles.map((article) => (
-        <div key={article.id} className='sm:px-20 p-7 sm:flex'>
+        <div
+          key={article.id}
+          className='sm:px-20 p-7 sm:flex'
+          onClick={handleNavClick}
+        >
           <img
             src={article.image}
             alt='artikel'
@@ -57,7 +64,7 @@ const Artikel = () => {
             </h3>
             <p className='text-[15px] sm:text-[16px]'>
               {article.description}{' '}
-              <Link to='Detailartikel' className='text-blue-400'>
+              <Link to='Detail-artikel' className='text-blue-400'>
                 Baca selengkapnya
               </Link>
             </p>

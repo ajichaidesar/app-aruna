@@ -18,7 +18,7 @@ const Arunasdc = () => {
     bg-white  py-32 lg:py-50 font-andika  '
     >
       <div className='bg-[#EF841A] w-full p-3 px-[25px] sm:px-20 mt-[-24px] '>
-        <p className='text-md'>Beranda &gt; Aruna SDC </p>
+        <p className='text-[16px] text-white'>Beranda &gt; Aruna SDC </p>
       </div>
       <div className='sm:p-10 p-7 sm:px-20 '>
         <h3 className='text-[36px] text-[#EF841A] font-bold mb-2'>
