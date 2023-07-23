@@ -23,7 +23,7 @@ const Filosofiaruna = () => {
               FILOSOFI SEKOLAH
             </p>
           </div>
-          <p className='mt-3  font-w-400 sm:leading-[40px] leading-[30px] text-[18px] sm:text-[20px]'>
+          <p className='mt-3  font-w-400 sm:leading-[40px] leading-[30px] text-[18px] sm:text-[20px] text-justify'>
             {item.description}
           </p>
         </div>

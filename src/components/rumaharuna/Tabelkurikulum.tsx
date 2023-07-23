@@ -30,7 +30,7 @@ const Tabelkurikulum = () => {
           ))}
         </p>
       </div>
-      <div className='flex mt-5  sm:mr-[150px] '>
+      <div className='sm:flex mt-5   sm:mr-[150px] '>
         {data.map((item, index) => (
           <div key={index}>
             <div
@@ -40,7 +40,7 @@ const Tabelkurikulum = () => {
             >
               <h3>{item.classType}</h3>
             </div>
-            <div className='space-y-2 text-[15px] sm:text-[20px] sm:w-[503px] w-[250px] '>
+            <div className='space-y-2 text-[15px] sm:text-[20px] sm:w-[503px] w-full '>
               {item.paragraphs.map((paragraph, paragraphIndex) => (
                 <p
                   className={`bg-[#E7FCFF] pt-2 px-2 sm:px-5`}
@@ -52,7 +52,9 @@ const Tabelkurikulum = () => {
             </div>
           </div>
         ))}
-        <Tabelkurikulum2 />
+        <div className='mt-10 sm:mt-0'>
+          <Tabelkurikulum2 />
+        </div>
       </div>
     </div>
   );

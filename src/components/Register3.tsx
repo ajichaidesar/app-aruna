@@ -14,7 +14,7 @@ const Register3 = () => {
   };
   return (
     <div className='w-full mt-10 bg-[#EF841A] p-20  flex justify-center items-center '>
-      <div className='bg-white rounded-xl sm:p-5 sm:mt-10 px-[40px] sm:px-10 shadow-md sm:w-[620px] sm:h-[600px]'>
+      <div className='bg-white rounded-xl sm:p-5 sm:mt-10 px-[3px] sm:px-10 shadow-md sm:w-[620px] sm:h-[600px]'>
         <h2 className='text-lg sm:text-[24px] mt-10 text-center font-bold mb-6'>
           Daftarkan Dirimu Sekarang
         </h2>
@@ -22,7 +22,7 @@ const Register3 = () => {
           onSubmit={handleSubmit}
           className='sm:w-[500px] w-[300px] sm:mt-12 sm:ml-5'
         >
-          <div className='mb-4'>
+          <div className='mb-4 px-3 sm:px-0'>
             <label
               className='block text-gray-700 text-[16px] font-bold mb-2 '
               htmlFor='name'
@@ -38,7 +38,7 @@ const Register3 = () => {
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div className='mb-4'>
+          <div className='mb-4 px-3 sm:px-0'>
             <label
               className='block text-gray-700 text-[16px] font-bold mb-2'
               htmlFor='email'
@@ -54,7 +54,7 @@ const Register3 = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div className='mb-4'>
+          <div className='mb-4 px-3 sm:px-0'>
             <label
               className='block text-gray-700 text-[16px] font-bold mb-2'
               htmlFor='password'
@@ -70,13 +70,15 @@ const Register3 = () => {
               onChange={(e) => setNumber(e.target.value)}
             />
           </div>
-          <div className='text-center bg-[#3BB3C3] hover:bg-gray-500 my-10 sm:mt-10 rounded-xl'>
+          <div className='px-3 sm:px-0'>
+          <div className='text-center bg-[#3BB3C3] hover:bg-gray-500 my-10 sm:mt-10  rounded-xl'>
             <button
               className=' text-white sm:text-[24px] text-[18px] font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
               type='submit'
             >
               Daftar Sekarang
             </button>
+          </div>
           </div>
         </form>
       </div>

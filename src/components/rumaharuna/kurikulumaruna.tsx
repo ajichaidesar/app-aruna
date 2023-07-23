@@ -26,24 +26,27 @@ const data = [
 ];
 
 const kurikulumaruna = () => {
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <div className='mt-20 font-andika'>
-      <p className='sm:text-[48px] text-[30px] font-bold text-center'>
+      <p className='sm:text-[48px] text-[20px] font-bold text-center' >
         Kurikulum Rumah Aruna
       </p>
-      <div className='text-right pr-10 text-[18px] sm:text-[20px] mt-5 '>
-        <Link to={'kurikulum'} className='text-[#3BB3C3]'>
+      <div className='text-right pr-10 text-[16px] sm:text-[20px] mt-5 '>
+        <Link to={'kurikulum'} className='text-[#3BB3C3]' onClick={handleNavClick}>
           Lihat Kurikulum
         </Link>
         <span className='pl-2'>
           <i className='fa-solid fa-chevron-up fa-rotate-90 p-1 bg-[#3BB3C3] hover:bg-slate-500 text-white rounded-full ' />
         </span>
       </div>
-      <div className='max-w-7xl sm:mx-auto  p-5 justify-center items-center sm:m-8 grid grid-cols-2 sm:grid-cols-4 gap-2'>
+      <div className='max-w-7xl sm:mx-auto  p-5 justify-center items-center sm:m-8 grid grid-cols-2 sm:grid-cols-4 gap-4'>
         {data.map((item, index) => (
           <div
             key={index}
-            className='bg-white rounded-md p-6 shadow-lg flex flex-col items-center mb-5 mx-5'
+            className='bg-white h-full rounded-md p-6 shadow-lg flex flex-col items-center mb-5 mx-5'
           >
             <div>
               <img
@@ -66,7 +69,7 @@ const kurikulumaruna = () => {
         ))}
       </div>
       <div className='text-center'>
-        <h3 className='sm:text-[48px] text-[30px] font-bold'>Program Kami</h3>
+        <h3 className='sm:text-[48px] text-[20px] font-bold'>Program Kami</h3>
       </div>
     </div>
   );

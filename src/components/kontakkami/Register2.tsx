@@ -17,7 +17,7 @@ const Register = () => {
 
   return (
     <div className='sm:flex mt-[200px] sm:mt-0 px-5 sm:px-10  font-andika '>
-      <div className='mt-500 pl-10 w-[500px]'>
+      <div className='mt-500 pl-10 sm:w-[500px]'>
         <p className='sm:text-[32px] text-lg font-bold '>
           Anda memiliki pertanyaan ?
         </p>

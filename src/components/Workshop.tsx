@@ -39,7 +39,7 @@ const workshopsData = [
 const Workshop = () => {
   return (
     <div className='w-full bg-white py-32 font-andika lg:py-50'>
-      <div className='bg-[#EF841A] text-white w-full px-10 sm:px-20 py-5 mt-[-24px]'>
+      <div className='bg-[#EF841A] text-white w-full px-10 sm:px-20 py-3 mt-[-24px]'>
         <p className='text-[16px]'>Beranda &gt; Aruna SDC &gt; Workshop </p>
       </div>
       <div className='sm:text-[36px] text-[25px] text-center mt-10 font-bold'>

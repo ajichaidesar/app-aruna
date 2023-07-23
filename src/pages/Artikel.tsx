@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Detailartikel from '../components/artikels/Detailartikel';
+// import Detailartikel from '../components/artikels/Detailartikel';
 import { image10 } from '../assets/img/galery';
 
-const articles = [
+const artikel = [
   {
     id: 1,
     image: image10,
@@ -35,8 +35,8 @@ const Artikel = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
-    <div className='max-w-full font-andika bg-white py-32 lg:py-50'>
-      <div className='bg-[#EF841A] max-w-full p-3 mt-[-24px]'>
+    <div className='w-full font-andika bg-white py-32 sm:py-50'>
+      <div className='bg-[#EF841A] w-full p-3 mt-[-24px]'>
         <p className='text-md sm:text-[16px] text-white pl-4 sm:pl-[70px]'>
           Beranda &gt; Artikel
         </p>
@@ -44,26 +44,26 @@ const Artikel = () => {
       <p className='sm:text-[36px] text-2xl sm:px-20 px-7 sm:py-10 pt-5 text-[#EF841A]'>
         Artikel
       </p>
-      {articles.map((article) => (
+      {artikel.map((artikel) => (
         <div
-          key={article.id}
+          key={artikel.id}
           className='sm:px-20 p-7 sm:flex'
           onClick={handleNavClick}
         >
           <img
-            src={article.image}
+            src={artikel.image}
             alt='artikel'
-            className='rounded-md w-[487.5px] h-[315.75px]'
+            className='rounded-md sm:w-[487.5px] sm:h-[315.75px] w-[300px] h-[200px]'
           />
           <div className='sm:mx-10 pt-5'>
             <p className='text-gray-400 xl:text-[16px] text-xs'>
-              {article.date}
+              {artikel.date}
             </p>
-            <h3 className='sm:text-[32px] text-[25px] font-bold my-5'>
-              {article.title}
+            <h3 className='sm:text-[32px] text-[20px] font-bold my-2 sm:my-5'>
+              {artikel.title}
             </h3>
-            <p className='text-[15px] sm:text-[16px]'>
-              {article.description}{' '}
+            <p className='text-[15px] text-justify k sm:text-[16px]'>
+              {artikel.description}{' '}
               <Link to='Detail-artikel' className='text-blue-400'>
                 Baca selengkapnya
               </Link>

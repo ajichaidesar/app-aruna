@@ -17,22 +17,22 @@ const openWhatsAppChat = (phoneNumber: string) => {
 
 const Hero = () => {
   return (
-    <div className='max-w-7xl mb-20 mx-auto lg:h-[85vh] bg-white pt-32 pl-12 flex flex-col-reverse lg:flex-row'>
+    <div className='max-w-7xl mb-20 mx-auto lg:h-[85vh] bg-white pt-32 px-8 sm:pl-12 flex flex-col-reverse lg:flex-row'>
       {heroData.map((hero, index) => (
         <>
           <div key={index}>
             <div>
-              <h3 className='text-[64px] font-satisfy text-[#EF841A]'>
+              <h3 className='sm:text-[64px] text-[40px] font-satisfy text-[#EF841A]'>
                 {hero.Judul_slide}
               </h3>
-              <p className='mt-2 sm:mt-5 font-andika text-[20px] sm:text-[28px] sm:w-[647px] sm:h-[166px] text-[#EF841A]'>
+              <p className='mt-2 sm:mt-5 font-andika text-[18px] sm:text-[28px] sm:w-[647px] sm:h-[166px] text-[#EF841A]'>
                 {hero.Descripsi_slide}
               </p>
               <button
-                className='pl-20 sm:pl-0'
+                className='pl-8 sm:pl-0'
                 onClick={() => openWhatsAppChat(hero.Telp_slide)}
               >
-                <div className=' flex text-white mt-10 sm:mt-15 bg-[#3BB3C3] hover:bg-gray-500 w-60 sm:w-80 p-2 py-3 rounded-2xl'>
+                <div className=' flex text-white mt-10 sm:mt-15 bg-[#3BB3C3] hover:bg-gray-500 w-60 sm:w-80  py-3 rounded-2xl'>
                   <i className='text-2xl fa-brands fa-whatsapp pl-5 sm:pl-5 h-[32px] w-[32px]' />
                   <p className='pl-5 font-andika text-[18px] sm:text-[24px]'>
                     Konsultasi Sekarang

@@ -15,7 +15,7 @@ const data = [
 
 const Tabelkurikulum2 = () => {
   return (
-    <div className='font-andika sm:w-[503px]  w-[250px]'>
+    <div className='font-andika sm:w-[503px]  w-full'>
       {data.map((item, index) => (
         <div key={index}>
           <div className='bg-[#EF841A] text-[18px] sm:text-[24px] text-center p-2'>

@@ -22,7 +22,7 @@ const Misisdc = () => {
           />
           <p className='pl-2 text-[20px] sm:text-[24px] font-bold'>MISI</p>
         </div>
-        <ul className='list-disc ml-8 leading-[30px] sm:leading-[40px] sm:w-100 text-[18px] sm:text-[20px] text-justify pr-5'>
+        <ul className='list-disc ml-8 leading-[30px] mt-2 sm:leading-[40px] sm:w-100 text-[18px] sm:text-[20px] text-justify pr-6'>
           {missionStatements.map((statement, index) => (
             <li key={index}>{statement}</li>
           ))}

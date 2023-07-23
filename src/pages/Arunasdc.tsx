@@ -1,10 +1,6 @@
 import React from 'react';
 import { aruna2 } from '../assets/img/galery/index';
-import { image1 } from '../assets/img/galery/index';
-import { image2 } from '../assets/img/galery/index';
-import { image3 } from '../assets/img/galery/index';
-import { image4 } from '../assets/img/galery/index';
-import { image5 } from '../assets/img/galery/index';
+
 
 import Visisdc from '../components/rumahsdc/visisdc';
 import Misisdc from '../components/rumahsdc/Misisdc';
@@ -17,11 +13,11 @@ const Arunasdc = () => {
       className='w-full  
     bg-white  py-32 lg:py-50 font-andika  '
     >
-      <div className='bg-[#EF841A] w-full p-3 px-[25px] sm:px-20 mt-[-24px] '>
+      <div className='bg-[#EF841A] w-full p-2 px-[30px] sm:px-20 mt-[-24px] '>
         <p className='text-[16px] text-white'>Beranda &gt; Aruna SDC </p>
       </div>
       <div className='sm:p-10 p-7 sm:px-20 '>
-        <h3 className='text-[36px] text-[#EF841A] font-bold mb-2'>
+        <h3 className='sm:text-[36px] text-[25px] text-[#EF841A] font-bold mb-2'>
           Profil Aruna SDC
         </h3>
         <div className='flex flex-col-reverse sm:flex-row sm:mb-20  '>

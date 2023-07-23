@@ -25,7 +25,7 @@ const Info = () => {
       {data.map((item, index) => (
         <div
           key={index}
-          className='bg-white  rounded-md py-[40px] sm:py-[42px] px-5 sm:px-[35px] mx-2 sm:mx-9 shadow-lg flex flex-col items-center'
+          className='bg-white  rounded-md py-[25px] sm:py-[42px] px-2 sm:px-[35px] mx-2 sm:mx-9 shadow-lg flex flex-col items-center'
         >
           <img
             src={item.Icon_info}
@@ -33,8 +33,8 @@ const Info = () => {
             className='sm:w-[76px] sm:h-[76px] w-[35px] h-[35px]'
           />
 
-          <div className='text-center sm:w-[210px]'>
-            <h3 className='text-[15px] sm:text-[20px] mt-2'>
+          <div className='text-center  sm:w-[210px]'>
+            <h3 className='text-[12px] sm:text-[20px] mt-2'>
               {item.Judul_info}
             </h3>
             <p className='text-xs sm:text-[12px] hidden sm:block mt-2 '>

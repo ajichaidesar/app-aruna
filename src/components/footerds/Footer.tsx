@@ -16,7 +16,7 @@ const Footer = () => {
               alt='logoaruna'
               className='w-[134.377px] h-[76px]'
             />
-            <div className='w-[423px] text-16 font-w-400 '>
+            <div className='sm:w-[423px] text-16 font-w-400 '>
               <h4>Alamat :</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc

@@ -22,7 +22,7 @@ const Misiaruna = () => {
           />
           <p className='pl-2 text-[20px] sm:text-[24px] font-bold'>MISI</p>
         </div>
-        <ul className='list-disc mx-9 font-w-400 sm:leading-[40px] leading-[30px] sm:w-100 text-[18px] sm:text-[20px] text-justify'>
+        <ul className='list-disc mx-9 font-w-400 sm:leading-[40px] leading-[30px] sm:w-100 text-[18px] sm:text-[20px] '>
           {missionStatements.map((statement, index) => (
             <li key={index}>{statement}</li>
           ))}

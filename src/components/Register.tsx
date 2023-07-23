@@ -24,7 +24,7 @@ const Register = () => {
 
   return (
     <div className='w-full bg-white py-32 font-andika lg:py-50'>
-      <div className='bg-[#EF841A] w-full p-3 mt-[-24px]'>
+      <div className='bg-[#EF841A] w-full pl-3 py-2 mt-[-24px]'>
         <p className='text-white pl-5 sm:pl-[70px] text-[16px]'>
           Beranda &gt; Aruna SDC &gt; Workshop
         </p>
@@ -42,14 +42,14 @@ const Register = () => {
               className='sm:pl-20 sm:w-[650px] sm:h-[432.908px]'
             />
             <div className='sm:pl-10 mt-5 sm:mt-0'>
-              <h2 className='sm:text-[32px] text-[28px] font-bold mb-2'>
+              <h2 className='sm:text-[32px] text-[25px] font-bold mb-2'>
                 {workshop.title}
               </h2>
               <div className='flex my-5 sm:my-10'>
                 <img
                   src={calendar}
                   alt='calendar'
-                  className='sm:w-[32px] sm:h-[32px] w-[28px] h-[28px]'
+                  className='sm:w-[32px] sm:h-[32px] w-[25px] h-[25px]'
                 />
                 <p className='pl-3 sm:mt-2 mt-1 text-gray-400 sm:text-[16px] text-[16px]'>
                   {workshop.date}
@@ -57,7 +57,7 @@ const Register = () => {
               </div>
               <div className='text-gray-600 sm:text-[20px] text-[18px]  text-left'>
                 <h3>Deskripsi: </h3>
-                <p className='sm:w-[630px] leading-[40px]'>
+                <p className='sm:w-[630px] leading-[30px] sm:leading-[40px]'>
                   {workshop.description}
                 </p>
               </div>
@@ -71,7 +71,7 @@ const Register = () => {
               alt='Plane'
               className='sm:w-[40.03px] sm:h-[40.03px] w-[30px] h-[30px]'
             />
-            <p className='font-bold sm:text-[24px] text-[22px] pl-3'>
+            <p className='font-bold sm:text-[24px] text-[20px] pl-3'>
               PERSYARATAN PENDAFTARAN
             </p>
           </div>
@@ -81,7 +81,7 @@ const Register = () => {
               className='list-disc mx-10 sm:w-100 text-[20px] leading-[30px] sm:leading-[40px]'
             >
               {workshop.requirements.map((requirement) => (
-                <li key={requirement}>{requirement}</li>
+                <li key={requirement} className='text-[16px] sm:text-[24px] '>{requirement}</li>
               ))}
             </ul>
           ))}

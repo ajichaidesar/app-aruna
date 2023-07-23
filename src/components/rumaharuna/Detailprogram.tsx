@@ -31,7 +31,7 @@ const Detailprogram = () => {
               <img
                 src={program.image}
                 alt={`image${index}`}
-                className='sm:w-[646px] h-[200px]  sm:h-[388px]'
+                className='sm:w-[646px] h-[200px] w-[250px] sm:h-[388px] object-contain'
               />
             </div>
             <div>
@@ -43,7 +43,7 @@ const Detailprogram = () => {
           <div className='py-5 text-[18px] sm:text-[20px] sm:mr-10'>
             <p>{program.additionalDescription}</p>
           </div>
-          <div className='flex text-[18px] sm:text-[20px] mt-5'>
+          <div className='sm:flex text-[18px] sm:text-[20px] mt-5'>
             <div className='bg-[#3BB3C3] hover:bg-slate-500 px-5 items-center mr-2 sm:mr-10 rounded-3xl'>
               <a
                 href={program.whatsappUrl}
@@ -55,7 +55,7 @@ const Detailprogram = () => {
                 <h3 className='py-2  text-white'>Konsultasi Sekarang</h3>
               </a>
             </div>
-            <div className='border-2 hover:bg-slate-500  px-5 items-center mr-10 rounded-3xl'>
+            <div className='border-2 hover:bg-slate-500 mt-3 sm:mt-0 px-5 items-center  rounded-3xl'>
               <a
                 href={program.symbolUrl}
                 target='_blank'

@@ -47,7 +47,7 @@ const programaruna = () => {
               />
             </div>
             <div className='pl-0  sm:pl-8 mt-5'>
-              <h3 className='sm:text-[32px]  text-[28px] font-bold my-2 sm:my-0'>
+              <h3 className='sm:text-[32px]  text-[20px] font-bold my-2 sm:my-0'>
                 {program.title}
               </h3>
               <div className='mt-2 sm:mt-10 flex text-[#3BB3C3]'>

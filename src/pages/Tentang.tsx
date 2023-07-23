@@ -20,22 +20,22 @@ const Tentang = () => {
             Beranda &gt; Tentang Kami
           </p>
         </div>
-        <div className='sm:px-10 sm:py-10'>
-          <p className='text-[#EF841A] text-[30px] sm:text-[36px] px-5 sm:px-9'>
+        <div className='sm:px-10 mt-3 sm:py-10'>
+          <p className='text-[#EF841A] text-[20px] sm:text-[36px] px-7 sm:px-9'>
             Tentang Kami
           </p>
           {data.map((item, index) => (
-            <div className='sm:flex sm:mt-10  mt-10 pl-10' key={index}>
+            <div className='sm:flex sm:mt-10  mt-5 pl-8 sm:pl-10' key={index}>
               <img
                 src={item.image}
                 alt={item.image}
-                className='sm:w-[388.75px] sm:h-[518.333px] w-[200px] rounded-xl'
+                className='sm:w-[388.75px] sm:h-[518.333px] w-[150px] h-[200px] rounded-xl'
               />
               <div className='sm:mx-10 pr-10 sm:pr-0 gap-20 mt-2'>
-                <p className='sm:text-[40px] text-[28px] font-bold mt-3'>
+                <p className='sm:text-[40px] text-[20px] font-bold mt-3'>
                   {item.title}
                 </p>
-                <p className='sm:text-[20px] text-[18px] font-w-400  mt-5 sm:w-[754px] sm:leading-[40px] '>
+                <p className='sm:text-[20px] text-justify text-[18px] font-w-400 mt-2 sm:mt-5 sm:w-[754px] sm:leading-[40px] '>
                   {item.description}
                 </p>
               </div>

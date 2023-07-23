@@ -20,7 +20,7 @@ const Accordion = (props: PropsAccordion) => {
         }`}
       >
         <div className='flex '>
-          <img src={Vector} alt='Vektor' />
+          <img src={Vector} alt='Vektor' className='h-[20px] w-[20px] sm:h-[30px] sm:w-[30px]' />
 
           <div className='w-full pl-3 flex text-[15px] sm:text-[16px] group-[.is-active]:font-bold'>
             {data.question}
