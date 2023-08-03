@@ -75,13 +75,13 @@ const Register = () => {
               PERSYARATAN PENDAFTARAN
             </p>
           </div>
-          {workshops.map((workshop) => (
+          {workshops.map((workshop, index) => (
             <ul
-              key={workshop.id}
+              key={index}
               className='list-disc mx-10 sm:w-100 text-[20px] leading-[30px] sm:leading-[40px]'
             >
-              {workshop.requirements.map((requirement) => (
-                <li key={requirement} className='text-[16px] sm:text-[24px] '>{requirement}</li>
+              {workshop.requirements.map((requirement, id) => (
+                <li key={id} className='text-[16px] sm:text-[24px] '>{requirement}</li>
               ))}
             </ul>
           ))}
