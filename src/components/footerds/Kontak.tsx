@@ -3,8 +3,11 @@ import { logo5, logo2 } from '../../assets/img/icon';
 
 const Kontak = () => {
   const contactData = [
-    { title: 'phone', telp: '082211223399' },
-    { type: 'email', email: 'rumaharuna@gmail.com' },
+    { id:1,
+      title: 'phone', 
+      telp: '082211223399',
+      type: 'email', 
+      email: 'rumaharuna@gmail.com' },
   ];
 
   return (
@@ -12,7 +15,7 @@ const Kontak = () => {
       <h4>KONTAK KAMI</h4>
       <ul className='mt-3 leading-[40px]'>
         {contactData.map((contact, index) => (
-          <li className='flex' key={index}>
+          <li className='flex' key={contact.id}>
             {contact.title === 'phone' ? (
               <img src={logo5} alt='logo5' className='h-[24px] w-[24px] mt-2' />
             ) : (

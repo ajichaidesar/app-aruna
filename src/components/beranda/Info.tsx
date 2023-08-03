@@ -3,16 +3,19 @@ import { icon1, icon2, icon3 } from '../../assets/img/icon/index';
 
 const data = [
   {
+    id: 1,
     Icon_info: icon1,
     Judul_info: 'Lorem Ipsum ',
     Descripsi_info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
+    id:2,
     Icon_info: icon1,
     Judul_info: 'Lorem Ipsum ',
     Descripsi_info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
+    id:3,
     Icon_info: icon1,
     Judul_info: 'Lorem Ipsum ',
     Descripsi_info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',

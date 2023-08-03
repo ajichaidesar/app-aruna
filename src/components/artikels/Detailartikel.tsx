@@ -24,8 +24,9 @@ const Detailartikel = () => {
         </p>
       </div>
       {articles.map((article) => (
+        <div key={article.id}>
         <>
-          <div key={article.id} className='px-10 sm:px-20 mt-10 sm:flex'>
+          <div  className='px-10 sm:px-20 mt-10 sm:flex'>
             <img
               src={article.image}
               alt={article.image}
@@ -50,6 +51,7 @@ const Detailartikel = () => {
             ))}
           </div>
         </>
+        </div>
       ))}
     </div>
   );

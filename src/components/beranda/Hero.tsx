@@ -17,10 +17,11 @@ const openWhatsAppChat = (phoneNumber: string) => {
 
 const Hero = () => {
   return (
-    <div className='max-w-7xl mb-20 mx-auto lg:h-[85vh] bg-white pt-32 px-8 sm:pl-12 flex flex-col-reverse lg:flex-row'>
+    <div className='max-w-7xl mb-20 mx-auto lg:h-[85vh] bg-white pt-32 px-8 sm:pl-12 '>
       {heroData.map((hero, index) => (
+        <div key={index} className='flex flex-col-reverse lg:flex-row'>          
         <>
-          <div key={index}>
+          <div >
             <div>
               <h3 className='sm:text-[64px] text-[40px] font-satisfy text-[#EF841A]'>
                 {hero.Judul_slide}
@@ -56,6 +57,7 @@ const Hero = () => {
             />
           </div>
         </>
+        </div>
       ))}
     </div>
   );

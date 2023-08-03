@@ -13,7 +13,7 @@ const artikel = [
       'Pendidikan anak usia dini (PAUD) dapat membantu proses perkembangan anak lebih optimal. Beberapa manfaat yang bisa didapat oleh anak yang mengikuti PAUD antara lain belajar bersosialisasi dengan teman sebayanya, mengelola stres, dan menyelesaikan masalah.',
   },
   {
-    id: 1,
+    id: 2,
     image: image10,
     date: '05 April 2023',
     title: 'Beragam Manfaat Pendidikan Anak Usia Dini dan Kekurangannya',
@@ -21,7 +21,7 @@ const artikel = [
       'Pendidikan anak usia dini (PAUD) dapat membantu proses perkembangan anak lebih optimal. Beberapa manfaat yang bisa didapat oleh anak yang mengikuti PAUD antara lain belajar bersosialisasi dengan teman sebayanya, mengelola stres, dan menyelesaikan masalah.',
   },
   {
-    id: 1,
+    id: 3,
     image: image10,
     date: '05 April 2023',
     title: 'Beragam Manfaat Pendidikan Anak Usia Dini dan Kekurangannya',
