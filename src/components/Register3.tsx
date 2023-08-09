@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { postRegistrasi } from '../api/registrasi.api';
+import { Registrasi } from '..types/registrasi.type';
 
 const Register3 = () => {
   const [name, setName] = useState('');

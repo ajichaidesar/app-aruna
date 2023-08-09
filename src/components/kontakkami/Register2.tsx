@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { postPesan } from '../../api/pesan.api';
+import { Pesan } from '../../types/pesan.type';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -6,8 +8,26 @@ const Register = () => {
   const [number, setNumber] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
+
+    
+    const data = {
+      nama: name,
+      email,
+      noHp: number,
+      pesan: message,
+    };
+
+    
+    try {
+      const response = await postPesan(data);
+      console.log('Response:', response);
+      
+    } catch (error) {
+      console.error('Error:', error);
+     
+    }
 
     console.log('Name:', name);
     console.log('Email:', email);
